@@ -7,7 +7,6 @@
 * Author: Shubham Yadav
 **/
 register_activation_hook(__FILE__, 'my_plugin_activate');
-
 // Deactivation hook
 register_uninstall_hook(__FILE__, 'my_plugin_uninstall');
 
@@ -39,10 +38,7 @@ function custom_form_script() {
                 var newContent = '<div id="myForm"><label for="inputValue">Enter Email or Phone to Certificate Download:</label><div id="certificate-sec"><input type="text" onchange="onChangeFunction(this.value)" id="inputValue" name="inputValue" required><input type="button" onclick="return funEventCheck()"  id="submitBtn"  value="Submit"></div></div>';
                 jQuery('.ct-container [data-column="end"]').append(newContent).fadeIn(1000);
             } 
-   
-   
 });
-    
 
     function callAjaxForRes(inputValue) {
         event.preventDefault(); // Prevent the default form submission
