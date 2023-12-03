@@ -1,0 +1,59 @@
+#downloader {
+  display: none;
+}
+
+.ct-header-cta #myForm {
+  position: absolute;
+}
+
+#myForm input[type="text"] {
+  border: 2px solid #3a4f66;
+  padding: 5px;
+  outline: none;
+}
+
+#myForm {
+  top: 4px;
+  left: 68%;
+  z-index: 9999;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#certificate-sec {
+  display: flex;
+}
+
+#inputValue {
+  height: 34px;
+}
+
+#submitBtn {
+  font-size: 13px;
+  background-color: #673193;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: var(--theme-button-border-radius, 3px);
+  border: var(--theme-button-border);
+}
+
+/* Styles for screens with a width of 768 pixels or less (e.g., mobile devices) */
+@media only screen and (max-width: 830px) {
+  #p-certificates {
+    font-size: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  #myForm {
+    height: 60px;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #p-certificates {
+    font-size: 7px !important;
+  }
+}
